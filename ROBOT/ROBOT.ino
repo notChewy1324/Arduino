@@ -14,7 +14,7 @@ int RedLight = 10;
 void setup() {
 pinMode(trigger, OUTPUT);
 pinMode(echo, INPUT);
-Serial.begin(9600); //Starts the serial communitcation
+Serial.begin(9600); //Starts the serial communitcation // This prints out information to the serial inside of the appilcation
 pinMode(m1, OUTPUT);
 pinMode(frontMotor, OUTPUT);
 pinMode(m2, OUTPUT);

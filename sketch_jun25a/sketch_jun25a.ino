@@ -26,9 +26,7 @@ void red(int redlight){
 }
 
 void loop() {
-  // FPMSR
 red(3000);
 yellow(1000);
 green(2000);
 }
-
