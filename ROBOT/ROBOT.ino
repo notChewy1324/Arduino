@@ -23,6 +23,7 @@ pinMode(RedLight, OUTPUT);
 
 analogWrite(frontMotor, motorSpeed);
 analogWrite(backMotor, motorSpeed);
+
 }
 
 
@@ -48,12 +49,12 @@ void loop() {
   Serial.println(distance);
   //SENSOR END
 
-  if(distance <= 40){
+  if (distance <= 40) {
       analogWrite(frontMotor, motorSpeed);
       analogWrite(backMotor, STOP);
       digitalWrite(RedLight, LOW);
       delay(0);
-  }else{
+  } else {
       analogWrite(frontMotor, motorSpeed);
       analogWrite(backMotor, motorSpeed);
       digitalWrite(RedLight, HIGH);
